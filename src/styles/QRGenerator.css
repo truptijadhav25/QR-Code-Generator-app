@@ -1,0 +1,47 @@
+.container{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-code{
+    border: 4px solid rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.input-text{
+    margin: 15px 0;
+    font-size: 22px;
+    padding: 5px 12px;
+}
+
+.qr-button{
+    text-align: center;
+}
+
+.btn-generate{
+    font-size: 22px;
+    background-color: #9a9a9a;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+@media print{
+    .qr-code{
+        zoom: 200%;
+
+    }
+    .qr-input{
+        display: none;
+    }
+
+    .qr-button{
+        display: none;
+    }
+}
